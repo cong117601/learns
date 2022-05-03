@@ -14,6 +14,7 @@ public class Test {
             System.out.println(33333);
             System.out.println(55);
             System.out.println(666);
+            System.out.println(8888);
             int c = 10;
             int i = 1 / 0;
             return c;
