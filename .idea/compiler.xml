@@ -8,7 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-kafka" />
         <module name="mybatis" />
-        <module name="rabbitMq" />
         <module name="rabbitmq" />
         <module name="dubbo-interface" />
         <module name="spring" />
@@ -23,6 +22,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="rabbitMq" target="1.8" />
       <module name="spring.integration-tests" target="1.8" />
       <module name="spring.integration-tests.main" target="1.8" />
       <module name="spring.integration-tests.test" target="1.8" />
