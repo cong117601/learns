@@ -1,0 +1,27 @@
+Spring中有几种依赖注入的方式？
+    1.手动注入
+      setter方法注入
+      构造方法注入
+    2.自动注入
+      xml自动注入 在标签中添加autowire的 属性
+      注解：
+      @AutoWired  byType --->Map<String,Object> -->Primary----->优先级最高的---->byName
+        属性上面
+        构造方法上
+        普通方法上
+
+
+
+spring ioc:
+ ioc 控制反转，以前由开发者自己new对象的过程转为spring框架来管理对象，
+ 同时对象中的属性由spring 进行注入，比如说set方法，构造方法注入，或者使用@AutoWired注解
+
+spring ioc 其实是用容器map帮我们管理对象的，singletonObjects来存放单例对象，整个bean的生命周期都是有容器进行管理的。
+
+spring会先进行创建beanFactory容器 默认是创建的DefaultListableBeanFactory，同时会注入一些 Initializer aware回调接口等等属性。
+之后xml进行解析，生成beanDefinition并存在map中，beanDefinition中包含了bean的基本信息，比如beanName,scope，class,等等
+之后执行BeanFactoryPostProcessor 扩展接口，可以对BeanFactory进行修改
+之后注册BeanPostProcessor，方便对bean初始化前 初始化后进行一些操作
+通过反射将beanDefinition中的值实列化成bean对象，完成bean对象的初始化过程（填充属性，执行aware接口，和BeanPostProcessor前置方法 ，执行init-method  之后执行BeanPostProcessor后置处理方法）
+生成完整的bean对象，通过getBean可以获取
+最后是销毁过程。

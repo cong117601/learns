@@ -1,0 +1,28 @@
+mybatis缓存：
+
+  默认开启的是一级缓存  作用在sqlSession上
+   PerpetualCache.class
+    key： hashcode+sqlId+sql + environment
+    value: 查询结果
+    查询完就会进行存储
+    失效场景： 1.不同的sqlSession会使缓存失效
+             2.相同的sqlSession上如果查询sql不一样 或者修改了数据，则失效
+             3.相同的sqlSession手动清除缓存
+
+
+  二级缓存需要在xml中配置<cache/> 作用在mapper文件中
+  PerpetualCache.class
+  但是又多包了一层 Configuration.caches => Map<String, Cache> caches;
+    key: namespace
+    value: PerpetualCache.cacheMap
+    事务提交的时候存储
+     先从二级缓存拿再到一级缓存；
+
+     失效场景： 1、同一个命名空间 发生增删改 失效；
+              2、让查询不存储再缓存中 <select useCache =false/>
+
+多对一
+一对多
+多对多
+嵌套查询（分步查询）
+嵌套结果（联合查询）

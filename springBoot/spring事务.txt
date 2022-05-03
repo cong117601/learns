@@ -1,0 +1,47 @@
+PlatformTransactionManager
+
+
+编程式事务
+   PlatformTransactionManager
+   TransactionTemplate
+声明式事务
+ xml: 1:配置事务管理器
+      2:配置事务通知
+      3:配置AOP
+ 混合配置：
+      也可以使用配置事务管理器，之后开启事务的注解
+ java类配置
+      使用@Transactional注解开启事务 其中有几个重要参数配置：
+        1.Spring事务隔离性
+           默认是mysql的隔离性
+
+        2.传播性：
+          required: 默认的；如果当前方法存在事务就加入这个事务中去，如果没有 就开始一个新的
+          requires_new:创建一个新的事务，如果当前存在事务，则把它挂起
+          nested: 如果当前存在事务，则创建一个事务作为当前事务的嵌套事务来运行，如果当前没有事务，则该取值等价于required;
+
+          mandatory: 如果当前存在事务，则加入进入，如果当前没有事务，则抛出异常
+          supports: 如果当前存在事务，则加入该事务；如果当前没有事务，则以非事务的方式继续运行
+          not_supports: 以非事务方式运行，如果当前存在事务，则把当前事务挂起
+
+          never:  以非事务方式运行，如果当前存在事务，则抛出异常
+
+        3.超时时间 如果在规定时间内未执行完，则回滚该事务；默认的数据库的超时时间；
+
+        4.只读
+        5.回滚规则 ：
+           默认 运行时异常 及error
+           可以通过设置rollBackFor表示哪些异常可以回滚
+           noRollBackFor 表示哪些异常可以不回滚
+
+
+       注意事项：
+            @Transactional只能用在public方法上
+            本类中调用带有事务的方法，该事务不生效
+
+
+
+
+
+
+

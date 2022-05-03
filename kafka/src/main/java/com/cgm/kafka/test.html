@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- #在head 里 script标签 通过src=引用 -->
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
+    <!-- #重新创建script标签写JS函数 -->
+    <script>
+
+
+
+        function getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]);
+            return null;
+        }
+
+        var id = getQueryString('id');
+        console.log('id=' + id)
+
+        var area = getQueryString('area');
+        console.log('area=' + area)
+        dengue = function () {
+            debugger;
+            let z = $("input[name='test']").val()
+            let list = ["111111", "cb2022", "3333", "4444", "5555", "6666", "7777", "8888", "9999", "1010", "01111", "02222",
+                "03333", "04444", "05555", "06666", "07777", "08888", "09999", "01010"
+            ]
+            if (z == list[Number(area) - 1]) {
+                window.location.href = "index.html?id=" + id + "&area=" + area;
+            } else {
+                alert("密码错误！！！")
+            }
+        }
+
+    </script>
+</head>
+<body>
+<div>
+    <label style="font-size: 48px;">密码</label>
+    <input style="width: 400px;height: 80px;border:1px solid #999999;margin: 0 0 0 20px;font-size: 36px;"
+           type="text" id="test" name="test">
+    <button type="button" style="width: 250px;height: 100px;font-size: 40px;margin-top: 50px;" onclick="dengue()">登录
+    </button>
+</div>
+</body>

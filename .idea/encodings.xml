@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/dubbo-customer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-customer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-interface/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-provider/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javaBase/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javaBase/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/netty/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/netty/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitMq/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitMq/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springBoot/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springBoot/src/main/java/com/cgm/springboot/bean/Customer.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springBoot/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-kafka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-kafka/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-rabbitmq/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-rabbitmq/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zk/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zk/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

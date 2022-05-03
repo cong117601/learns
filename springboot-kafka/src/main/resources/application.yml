@@ -1,0 +1,24 @@
+server:
+  port: 8080
+  #制定kafka代理地址
+spring:
+  kafka:
+    bootstrap-servers: 192.168.139.138:9092
+    producer:
+      retries: 3
+      batch-size: 16384
+      buffer-memory: 335554432
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      acks: 1
+
+    consumer:
+      group-id: user-log-group
+      auto-offset-reset: earliest
+      enable-auto-commit: false
+      max-poll-records: 500
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+    listener:
+      ack-mode: manual_immediate

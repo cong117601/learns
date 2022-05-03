@@ -1,0 +1,37 @@
+package com.cgm.rabbitmq.customerack;
+
+import com.cgm.rabbitmq.utils.RabbitMqConst;
+import com.cgm.rabbitmq.utils.RabbitMqUtils;
+import com.rabbitmq.client.CancelCallback;
+import com.rabbitmq.client.Channel;
+import com.rabbitmq.client.DeliverCallback;
+
+import java.io.IOException;
+
+public class Work2 {
+
+
+    public static void main(String[] args) throws IOException {
+
+        System.out.println("c1等待接收到消息..");
+        Channel channel = RabbitMqUtils.getChannel();
+
+        DeliverCallback deliverCallback = (consumerTag, message) -> {
+            System.out.println(Thread.currentThread().getName() + "接收到的消息：" + new String(message.getBody()));
+
+            //消费完消息 手动应答
+            //1.消息标志
+            //2.是否批量
+            channel.basicAck(message.getEnvelope().getDeliveryTag(), false);
+        };
+        //不公平分发
+        channel.basicQos(2);
+        //取消消费的一个回调接口 如在消费的时候队列被删除掉了
+        CancelCallback cancelCallback = (consumerTag) -> {
+            System.out.println(consumerTag + "消费者取消消息 回调");
+        };
+
+        channel.basicConsume(RabbitMqConst.ACK_QUEUE, false, deliverCallback, cancelCallback);
+
+    }
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../spring5.x" />
+        <option name="gradleHome" value="D:/soft/gradle-5.6.4" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../spring5.x" />
+            <option value="$PROJECT_DIR$/../spring5.x/buildSrc" />
+            <option value="$PROJECT_DIR$/../spring5.x/framework-bom" />
+            <option value="$PROJECT_DIR$/../spring5.x/integration-tests" />
+            <option value="$PROJECT_DIR$/../spring5.x/spring-aop" />
+            <option value="$PROJECT_DIR$/../spring5.x/spring-aspects" />
+            <option value="$PROJECT_DIR$/../spring5.x/spring-beans" />
+            <option value="$PROJECT_DIR$/../spring5.x/spring-context" />
+            <option value="$PROJECT_DIR$/../spring5.x/spring-context-indexer" />
+            <option value="$PROJECT_DIR$/../spring5.x/spring-context-support" />
+            <option value="$PROJECT_DIR$/../spring5.x/spring-core" />
+            <option value="$PROJECT_DIR$/../spring5.x/spring-core/kotlin-coroutines" />
+            <option value="$PROJECT_DIR$/../spring5.x/spring-debug" />
+            <option value="$PROJECT_DIR$/../spring5.x/spring-expression" />
+            <option value="$PROJECT_DIR$/../spring5.x/spring-instrument" />
+            <option value="$PROJECT_DIR$/../spring5.x/spring-jcl" />
+            <option value="$PROJECT_DIR$/../spring5.x/spring-jdbc" />
+            <option value="$PROJECT_DIR$/../spring5.x/spring-jms" />
+            <option value="$PROJECT_DIR$/../spring5.x/spring-messaging" />
+            <option value="$PROJECT_DIR$/../spring5.x/spring-orm" />
+            <option value="$PROJECT_DIR$/../spring5.x/spring-oxm" />
+            <option value="$PROJECT_DIR$/../spring5.x/spring-test" />
+            <option value="$PROJECT_DIR$/../spring5.x/spring-tx" />
+            <option value="$PROJECT_DIR$/../spring5.x/spring-web" />
+            <option value="$PROJECT_DIR$/../spring5.x/spring-webflux" />
+            <option value="$PROJECT_DIR$/../spring5.x/spring-webmvc" />
+            <option value="$PROJECT_DIR$/../spring5.x/spring-websocket" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

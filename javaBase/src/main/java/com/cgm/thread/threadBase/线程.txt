@@ -1,0 +1,116 @@
+
+
+进程：书写的代码->编译->os上运行起来，那这个运行起来的程序就叫进程。操作系统进行资源分配的最小单位
+
+线程：一个进程中可能有一个线程，可能有多个线程，它是程序中某一块的执行路径，为了充分压榨cpu，提高资源利用率，
+     同时是调度执行的基本单位，多个线程共享进程中的资源。
+
+
+进程的通信方式：文件，
+线程的通信方式：信号量
+
+
+线程上下文切换： 当代操作系统都是分时处理系统，多个线程的执行是交替执行的，线程1执行一会之后，会保存当前的状态，然后线程2开始执行，
+这样交替执行的方式，就是线程上下文切换。
+
+单核cpu设置多线程是否有意义:  有意义
+ 比如说：一个线程在运行过程中，它是等待的某个程序的输入，或者等待输出，或者sleep,那么这段时间内，cpu是不是空闲出来了，那就完全可以让这段时间去执行其他的线程。
+
+工作线程数是不是设置越大越好：
+   cpu密集型、io密集型
+
+   1>根据cpu的核数，设想让每个核都独立运行一个线程，不打扰最后汇总；
+
+   2>threadNum = cpuNum * cpu利用率 * （1+ （等待时间/计算时间)）
+   等待时间/计算时间的比率 用profiler工具进行统计
+
+
+
+创建线程的5种方式
+1> extend Thread interface
+2> implements Runable
+3> lambda
+4> 实现callable
+5> 线程池
+
+中断
+
+生产者 消费者模型
+
+线程池
+
+
+
+juc: 为java语言提供多线程同步结构的支撑
+解决多线程同步问题，给java开发者提供便利的函数；
+
+包含：原子类，锁类、工具类（线程同步结构、线程池等）
+
+如何实现一把锁？
+ 1.表示当前锁的状态
+   boolean state
+ 2.保证多线程抢锁 线程安全
+   lock cmpxchg (cas)
+ 3.处理没有获取到锁的线程
+   自旋 阻塞
+ 4.释放锁后如何处理未获得锁的线程
+   自旋： 自己枪锁
+   阻塞：唤醒
+
+
+
+ExecutorService :
+ shutdown() 关闭线程池，不在接受新任务，但已经提交的任务会执行完成
+ showdownNow() 立即关闭线程池，尝试停止正在运行的任务，未执行的任务将不在执行，
+  被迫停止及未执行的任务将已列表的形式返回
+
+ isShowdown()
+
+ awaitTermination：在指定时间内线程池达到终止状态了才会返回
+ submit(Callable task)执行有返回值的任务，任务的返回值未task.call（）的结果
+ submit(Runnable ,T result) 执行有返回值的任务，任务的返回值为这里传入的result
+ 当然只有当任务执行完成了调用get()时才会返回
+
+AbstractExecutorService 使用模板模式，封装执行的逻辑，具体的执行逻辑由线程池类实现；
+ecs 装饰者模式
+
+new ThreadPoolExector(七个参数)
+1.coreThreadPoolSize
+2.maxThreadPoolSize
+3.keepaliveTime 非核心线程没有任务时最大的存活时间
+4.时间单位 s ms ..
+5.队列 ：当核心线程数都在用时，用来存放进来的任务
+6.ThreadFactory
+7.拒绝策略
+
+  AbortyPoliy 直接拒绝 （也是默认的）
+  CallerRuns 哪个线程submit的，那个执行（调用者去执行）
+  DiscardPolicy 默默丢弃任务
+  DiscardOldestPolicy 丢弃最老的
+
+
+
+  5种状态：
+    running
+    shutdown 不接受新任务，但是要接收队列任务
+    stop 不接受新任务，也不接受队列任务，并且打断正在执行中的任务
+    tidying 所有任务终止，待处理任务数量为0，线程转换为tidying，将会执行terminated（）钩子函数
+
+    terminated  钩子函数执行完成
+
+
+
+
+    提交任务 execute()
+    创建新线程 addworker()
+
+       if (rs >= SHUTDOWN &&
+                     ! (rs == SHUTDOWN &&
+                        firstTask == null &&
+                        ! workQueue.isEmpty())) 保证shutdown状态，不接受新任务，但是要消耗队列中的任务
+
+               return false;
+
+     执行work中的run -> runWork(this) ->执行线程
+
+

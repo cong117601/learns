@@ -1,0 +1,31 @@
+syntax = "proto3";
+option optimize_for = SPEED;
+option java_package = "com.cgm.netty.protoBuf2";
+option java_outer_classname = "MyDataInfo";
+
+
+message MyMessage{
+
+  enum DataType{
+    StrudentType = 0;
+    TeacherType = 1;
+  }
+  //用data_type 来表示传的哪一个枚举
+  DataType data_type = 1;
+
+  oneof dataBody{
+    Student  student = 2;
+    Teacher teacher = 3;
+  }
+}
+
+message Student {
+  int32 id = 1;
+  string name = 2;
+}
+
+message Teacher {
+
+  string tName = 1;
+  int32  age = 2;
+}
