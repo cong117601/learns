@@ -54,6 +54,7 @@ public class Test3 {
             /***多线程执行***/
             threadPool.submit(task);
 
+
         }
         countDownLatch.await();
         threadPool.shutdown();

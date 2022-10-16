@@ -14,4 +14,8 @@ import org.springframework.stereotype.Component;
 public class AppConfig {
 
 
+    @Bean
+    public static User user() {
+        return new User();
+    }
 }

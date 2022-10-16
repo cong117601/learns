@@ -1,0 +1,8 @@
+channel:
+  vivo:
+    appId: cnm
+    appKey: nmsl
+  xianlai:
+    appId: shiyousl
+    appKey: woxiangrinidaye
+    others: qiangjiannilaopao

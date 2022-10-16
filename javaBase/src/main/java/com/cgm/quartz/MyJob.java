@@ -1,6 +1,7 @@
 package com.cgm.quartz;
 
 import org.quartz.*;
+import org.springframework.scheduling.annotation.Scheduled;
 
 import java.util.Date;
 @DisallowConcurrentExecution

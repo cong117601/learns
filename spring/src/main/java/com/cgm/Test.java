@@ -16,6 +16,10 @@ public class Test {
         System.out.println(context.getBean("cgmFactoryBean"));
 
 
+        Object user = context.getBean("user");
+        System.out.println(user);
+
+
         for (; ; ) {
         }
 

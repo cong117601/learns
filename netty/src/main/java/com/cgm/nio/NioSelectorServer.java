@@ -18,12 +18,20 @@ public class NioSelectorServer {
 
     public static void main(String[] args) throws IOException {
 
-        ServerSocketChannel serverSocket = ServerSocketChannel.open();
+        ServerSocketChannel serverSocket = ServerSocketChannel.open();  //fd4
+        /**
+         * 如果是epoll 则调用 epoll_create  创建一个fd4
+         */
         Selector selector = Selector.open();
+
+
         serverSocket.socket().bind(new InetSocketAddress(9999));
 
         serverSocket.configureBlocking(false);
-
+        /**
+         * select poll jvm里开辟一个数组 fd放进去
+         * epoll: epoll_ctl(fd3,add,fd4,epollin)
+         */
         serverSocket.register(selector, SelectionKey.OP_ACCEPT);
 
         System.out.println("服务端启动成功。。。。");
@@ -32,10 +40,16 @@ public class NioSelectorServer {
         while (true) {
 
             //阻塞等待需要处理的事件
+            /**
+             * epoll: epoll_wait
+             * select poll  select(fd4)
+             */
             selector.select();
 
 
-            //获取全部事件
+            //返回有状态的fd集合
+            //这也是解决了 nio中自己去循环所有的fd,检查r w, 使用 多路复用就调用一次select 就 返回了 所有有状态的r w fd了
+
             Set<SelectionKey> selectionKeys = selector.selectedKeys();
             Iterator<SelectionKey> iterator = selectionKeys.iterator();
             while (iterator.hasNext()) {
@@ -47,7 +61,7 @@ public class NioSelectorServer {
                     socketChannel.configureBlocking(false);
 
                     socketChannel.register(selector, SelectionKey.OP_READ);
-                    System.out.println("客户短连接成功");
+                    System.out.println("客户端连接成功");
 
                 } else if (key.isReadable()) {
                     SocketChannel socketChannel = (SocketChannel) key.channel();

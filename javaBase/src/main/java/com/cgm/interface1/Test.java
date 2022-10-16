@@ -20,9 +20,12 @@ abstract class A {
 
     public abstract void method();
 }
+interface D{
 
-interface B {
-    int a = 100;
+}
+
+interface B extends D{
+    public static final  int  a = 100;
 
     public void test();
 

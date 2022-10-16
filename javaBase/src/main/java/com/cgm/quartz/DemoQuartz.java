@@ -50,6 +50,12 @@ public class DemoQuartz {
         //6.启动 调度器
         scheduler.start();
 
+
+        String t1 = "123";
+        char[] chars = t1.toCharArray();
+
     }
+
+
 
 }

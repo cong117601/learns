@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cgm.dao.master.UserMapper">
+
+    <select id="getUserById" resultType="java.util.Map" parameterType="java.lang.Integer">
+        select *
+        from user
+        where id = #{id}
+    </select>
+    <select id="getUserList" resultType="java.util.Map">
+
+        select u.id,i.name
+        from user u
+                 join(select id from user limit #{page},#{pageCount}) t on u.id = t.id
+
+
+    </select>
+
+</mapper>

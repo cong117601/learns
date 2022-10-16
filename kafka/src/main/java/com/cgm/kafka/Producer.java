@@ -13,13 +13,14 @@ import java.util.concurrent.TimeUnit;
 
 public class Producer {
 
-    private final static String TOPIC_NAME = "my-partitions";
+    private final static String TOPIC_NAME = "userEvent2";
 
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 
 
         Properties properties = new Properties();
+
         properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "192.168.139.138:9092");
          /*
          发出消息持久化机制参数

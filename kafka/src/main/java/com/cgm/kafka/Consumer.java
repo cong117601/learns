@@ -12,8 +12,8 @@ import java.util.Map;
 import java.util.Properties;
 
 public class Consumer {
-    private final static String TOPIC_NAME = "my-partitions";
-    private final static String CONSUMER_GROUP_NAME = "testGroup";
+    private final static String TOPIC_NAME = "test2";
+    private final static String CONSUMER_GROUP_NAME = "testGroup3";
 
     public static void main(String[] args) {
 
@@ -40,9 +40,11 @@ public class Consumer {
         */
         //props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
       /*
+
       consumer给broker发送心跳的间隔时间，broker接收到心跳如果此时有rebalance发生会通过心跳响应将
       rebalance方案下发给consumer，这个时间可以稍微短一点
       */
+        properties.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
         properties.put(ConsumerConfig.HEARTBEAT_INTERVAL_MS_CONFIG, 1000);
         /*
         服务端broker多久感知不到一个consumer心跳就认为他故障了，会将其踢出消费组，

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/algorithm/algorithm.iml" filepath="$PROJECT_DIR$/algorithm/algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-interfaces/dubbo-interfaces.iml" filepath="$PROJECT_DIR$/dubbo-interfaces/dubbo-interfaces.iml" />
     </modules>
   </component>
 </project>

@@ -1,13 +1,15 @@
 package com.cgm.thread.threadBase;
 
+import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.LockSupport;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * 打印AaBbCc
  */
 public class ThreadPrintABC_withParkAndUnPark {
     static char[] A = {'A','B','C'};
-    static char[] a = {'a','b','b'};
+    static char[] a = {'a','b','c'};
     static Thread t1 = null;
     static Thread t2 = null;
     public static void main(String[] args) {
@@ -32,6 +34,8 @@ public class ThreadPrintABC_withParkAndUnPark {
         t1.start();
         t2.start();
 
-
+        ReentrantLock lock = new ReentrantLock();
+        lock.lock();
+        lock.unlock();
     }
 }

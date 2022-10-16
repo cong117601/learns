@@ -1,0 +1,141 @@
+2022-09-08 00:28:19.799 DEBUG 9656 --- [           main] io.netty.util.internal.logging.InternalLoggerFactory:53 : Using Log4J as the default logging framework
+2022-09-08 00:28:19.802 DEBUG 9656 --- [           main] io.netty.util.ResourceLeakDetector:130 : -Dio.netty.leakDetection.level: simple
+2022-09-08 00:28:19.802 DEBUG 9656 --- [           main] io.netty.util.ResourceLeakDetector:131 : -Dio.netty.leakDetection.targetRecords: 4
+2022-09-08 00:28:19.814 DEBUG 9656 --- [           main] io.netty.util.internal.PlatformDependent:1015 : Platform: Windows
+2022-09-08 00:28:19.816 DEBUG 9656 --- [           main] io.netty.util.internal.PlatformDependent0:408 : -Dio.netty.noUnsafe: false
+2022-09-08 00:28:19.816 DEBUG 9656 --- [           main] io.netty.util.internal.PlatformDependent0:876 : Java version: 8
+2022-09-08 00:28:19.817 DEBUG 9656 --- [           main] io.netty.util.internal.PlatformDependent0:125 : sun.misc.Unsafe.theUnsafe: available
+2022-09-08 00:28:19.818 DEBUG 9656 --- [           main] io.netty.util.internal.PlatformDependent0:149 : sun.misc.Unsafe.copyMemory: available
+2022-09-08 00:28:19.818 DEBUG 9656 --- [           main] io.netty.util.internal.PlatformDependent0:187 : java.nio.Buffer.address: available
+2022-09-08 00:28:19.819 DEBUG 9656 --- [           main] io.netty.util.internal.PlatformDependent0:252 : direct buffer constructor: available
+2022-09-08 00:28:19.819 DEBUG 9656 --- [           main] io.netty.util.internal.PlatformDependent0:326 : java.nio.Bits.unaligned: available, true
+2022-09-08 00:28:19.819 DEBUG 9656 --- [           main] io.netty.util.internal.PlatformDependent0:391 : jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2022-09-08 00:28:19.820 DEBUG 9656 --- [           main] io.netty.util.internal.PlatformDependent0:398 : java.nio.DirectByteBuffer.<init>(long, int): available
+2022-09-08 00:28:19.820 DEBUG 9656 --- [           main] io.netty.util.internal.PlatformDependent:1058 : sun.misc.Unsafe: available
+2022-09-08 00:28:19.820 DEBUG 9656 --- [           main] io.netty.util.internal.PlatformDependent:1177 : -Dio.netty.tmpdir: C:\Users\cong1\AppData\Local\Temp (java.io.tmpdir)
+2022-09-08 00:28:19.821 DEBUG 9656 --- [           main] io.netty.util.internal.PlatformDependent:1256 : -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2022-09-08 00:28:19.822 DEBUG 9656 --- [           main] io.netty.util.internal.PlatformDependent:177 : -Dio.netty.maxDirectMemory: 3754426368 bytes
+2022-09-08 00:28:19.822 DEBUG 9656 --- [           main] io.netty.util.internal.PlatformDependent:184 : -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2022-09-08 00:28:19.823 DEBUG 9656 --- [           main] io.netty.util.internal.CleanerJava6:92 : java.nio.ByteBuffer.cleaner(): available
+2022-09-08 00:28:19.823 DEBUG 9656 --- [           main] io.netty.util.internal.PlatformDependent:204 : -Dio.netty.noPreferDirect: false
+2022-09-08 00:28:19.824 DEBUG 9656 --- [           main] io.netty.buffer.PooledByteBufAllocator:156 : -Dio.netty.allocator.numHeapArenas: 24
+2022-09-08 00:28:19.824 DEBUG 9656 --- [           main] io.netty.buffer.PooledByteBufAllocator:157 : -Dio.netty.allocator.numDirectArenas: 24
+2022-09-08 00:28:19.824 DEBUG 9656 --- [           main] io.netty.buffer.PooledByteBufAllocator:159 : -Dio.netty.allocator.pageSize: 8192
+2022-09-08 00:28:19.824 DEBUG 9656 --- [           main] io.netty.buffer.PooledByteBufAllocator:164 : -Dio.netty.allocator.maxOrder: 11
+2022-09-08 00:28:19.824 DEBUG 9656 --- [           main] io.netty.buffer.PooledByteBufAllocator:168 : -Dio.netty.allocator.chunkSize: 16777216
+2022-09-08 00:28:19.825 DEBUG 9656 --- [           main] io.netty.buffer.PooledByteBufAllocator:169 : -Dio.netty.allocator.tinyCacheSize: 512
+2022-09-08 00:28:19.825 DEBUG 9656 --- [           main] io.netty.buffer.PooledByteBufAllocator:170 : -Dio.netty.allocator.smallCacheSize: 256
+2022-09-08 00:28:19.825 DEBUG 9656 --- [           main] io.netty.buffer.PooledByteBufAllocator:171 : -Dio.netty.allocator.normalCacheSize: 64
+2022-09-08 00:28:19.825 DEBUG 9656 --- [           main] io.netty.buffer.PooledByteBufAllocator:172 : -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2022-09-08 00:28:19.825 DEBUG 9656 --- [           main] io.netty.buffer.PooledByteBufAllocator:173 : -Dio.netty.allocator.cacheTrimInterval: 8192
+2022-09-08 00:28:19.825 DEBUG 9656 --- [           main] io.netty.buffer.PooledByteBufAllocator:174 : -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2022-09-08 00:28:19.826 DEBUG 9656 --- [           main] io.netty.buffer.PooledByteBufAllocator:175 : -Dio.netty.allocator.useCacheForAllThreads: true
+2022-09-08 00:28:19.826 DEBUG 9656 --- [           main] io.netty.buffer.PooledByteBufAllocator:176 : -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2022-09-08 00:28:19.830 DEBUG 9656 --- [           main] io.netty.util.internal.InternalThreadLocalMap:56 : -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2022-09-08 00:28:19.830 DEBUG 9656 --- [           main] io.netty.util.internal.InternalThreadLocalMap:59 : -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2022-09-08 00:28:19.836 DEBUG 9656 --- [           main] io.lettuce.core.resource.DefaultClientResources:107 : -Dio.netty.eventLoopThreads: 12
+2022-09-08 00:28:19.841 DEBUG 9656 --- [           main] io.lettuce.core.resource.DefaultEventLoopGroupProvider:194 : Creating executor io.netty.util.concurrent.DefaultEventExecutorGroup
+2022-09-08 00:28:19.867 DEBUG 9656 --- [           main] io.netty.util.ResourceLeakDetectorFactory:195 : Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@1af6d656
+2022-09-08 00:28:19.872 DEBUG 9656 --- [           main] io.netty.util.internal.PlatformDependent:919 : org.jctools-core.MpscChunkedArrayQueue: available
+2022-09-08 00:28:19.929 DEBUG 9656 --- [           main] io.lettuce.core.resource.DefaultClientResources:188 : LatencyUtils/HdrUtils are not available, metrics are disabled
+2022-09-08 00:28:20.562 DEBUG 9656 --- [           main] io.lettuce.core.resource.DefaultEventLoopGroupProvider:194 : Creating executor io.netty.util.concurrent.DefaultEventExecutorGroup
+2022-09-08 00:28:20.562 DEBUG 9656 --- [           main] io.lettuce.core.resource.DefaultClientResources:188 : LatencyUtils/HdrUtils are not available, metrics are disabled
+2022-09-08 00:28:21.322 DEBUG 9656 --- [extShutdownHook] io.lettuce.core.resource.DefaultClientResources:599 : Initiate shutdown (0, 2, SECONDS)
+2022-09-08 00:28:21.323 DEBUG 9656 --- [extShutdownHook] io.lettuce.core.resource.DefaultEventLoopGroupProvider:261 : Initiate shutdown (0, 2, SECONDS)
+2022-09-08 00:28:21.331 DEBUG 9656 --- [extShutdownHook] io.lettuce.core.RedisClient:466 : Initiate shutdown (100, 100, MILLISECONDS)
+2022-09-08 00:28:21.334 DEBUG 9656 --- [extShutdownHook] io.lettuce.core.resource.DefaultClientResources:599 : Initiate shutdown (100, 100, MILLISECONDS)
+2022-09-08 00:28:21.334 DEBUG 9656 --- [extShutdownHook] io.lettuce.core.resource.DefaultEventLoopGroupProvider:261 : Initiate shutdown (100, 100, MILLISECONDS)
+2022-09-08 00:29:42.593 DEBUG 15192 --- [           main] io.netty.util.internal.logging.InternalLoggerFactory:53 : Using Log4J as the default logging framework
+2022-09-08 00:29:42.596 DEBUG 15192 --- [           main] io.netty.util.ResourceLeakDetector:130 : -Dio.netty.leakDetection.level: simple
+2022-09-08 00:29:42.597 DEBUG 15192 --- [           main] io.netty.util.ResourceLeakDetector:131 : -Dio.netty.leakDetection.targetRecords: 4
+2022-09-08 00:29:42.608 DEBUG 15192 --- [           main] io.netty.util.internal.PlatformDependent:1015 : Platform: Windows
+2022-09-08 00:29:42.610 DEBUG 15192 --- [           main] io.netty.util.internal.PlatformDependent0:408 : -Dio.netty.noUnsafe: false
+2022-09-08 00:29:42.610 DEBUG 15192 --- [           main] io.netty.util.internal.PlatformDependent0:876 : Java version: 8
+2022-09-08 00:29:42.611 DEBUG 15192 --- [           main] io.netty.util.internal.PlatformDependent0:125 : sun.misc.Unsafe.theUnsafe: available
+2022-09-08 00:29:42.611 DEBUG 15192 --- [           main] io.netty.util.internal.PlatformDependent0:149 : sun.misc.Unsafe.copyMemory: available
+2022-09-08 00:29:42.612 DEBUG 15192 --- [           main] io.netty.util.internal.PlatformDependent0:187 : java.nio.Buffer.address: available
+2022-09-08 00:29:42.612 DEBUG 15192 --- [           main] io.netty.util.internal.PlatformDependent0:252 : direct buffer constructor: available
+2022-09-08 00:29:42.613 DEBUG 15192 --- [           main] io.netty.util.internal.PlatformDependent0:326 : java.nio.Bits.unaligned: available, true
+2022-09-08 00:29:42.613 DEBUG 15192 --- [           main] io.netty.util.internal.PlatformDependent0:391 : jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2022-09-08 00:29:42.613 DEBUG 15192 --- [           main] io.netty.util.internal.PlatformDependent0:398 : java.nio.DirectByteBuffer.<init>(long, int): available
+2022-09-08 00:29:42.614 DEBUG 15192 --- [           main] io.netty.util.internal.PlatformDependent:1058 : sun.misc.Unsafe: available
+2022-09-08 00:29:42.614 DEBUG 15192 --- [           main] io.netty.util.internal.PlatformDependent:1177 : -Dio.netty.tmpdir: C:\Users\cong1\AppData\Local\Temp (java.io.tmpdir)
+2022-09-08 00:29:42.614 DEBUG 15192 --- [           main] io.netty.util.internal.PlatformDependent:1256 : -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2022-09-08 00:29:42.616 DEBUG 15192 --- [           main] io.netty.util.internal.PlatformDependent:177 : -Dio.netty.maxDirectMemory: 3754426368 bytes
+2022-09-08 00:29:42.616 DEBUG 15192 --- [           main] io.netty.util.internal.PlatformDependent:184 : -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2022-09-08 00:29:42.617 DEBUG 15192 --- [           main] io.netty.util.internal.CleanerJava6:92 : java.nio.ByteBuffer.cleaner(): available
+2022-09-08 00:29:42.617 DEBUG 15192 --- [           main] io.netty.util.internal.PlatformDependent:204 : -Dio.netty.noPreferDirect: false
+2022-09-08 00:29:42.618 DEBUG 15192 --- [           main] io.netty.buffer.PooledByteBufAllocator:156 : -Dio.netty.allocator.numHeapArenas: 24
+2022-09-08 00:29:42.618 DEBUG 15192 --- [           main] io.netty.buffer.PooledByteBufAllocator:157 : -Dio.netty.allocator.numDirectArenas: 24
+2022-09-08 00:29:42.618 DEBUG 15192 --- [           main] io.netty.buffer.PooledByteBufAllocator:159 : -Dio.netty.allocator.pageSize: 8192
+2022-09-08 00:29:42.619 DEBUG 15192 --- [           main] io.netty.buffer.PooledByteBufAllocator:164 : -Dio.netty.allocator.maxOrder: 11
+2022-09-08 00:29:42.619 DEBUG 15192 --- [           main] io.netty.buffer.PooledByteBufAllocator:168 : -Dio.netty.allocator.chunkSize: 16777216
+2022-09-08 00:29:42.619 DEBUG 15192 --- [           main] io.netty.buffer.PooledByteBufAllocator:169 : -Dio.netty.allocator.tinyCacheSize: 512
+2022-09-08 00:29:42.619 DEBUG 15192 --- [           main] io.netty.buffer.PooledByteBufAllocator:170 : -Dio.netty.allocator.smallCacheSize: 256
+2022-09-08 00:29:42.619 DEBUG 15192 --- [           main] io.netty.buffer.PooledByteBufAllocator:171 : -Dio.netty.allocator.normalCacheSize: 64
+2022-09-08 00:29:42.619 DEBUG 15192 --- [           main] io.netty.buffer.PooledByteBufAllocator:172 : -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2022-09-08 00:29:42.619 DEBUG 15192 --- [           main] io.netty.buffer.PooledByteBufAllocator:173 : -Dio.netty.allocator.cacheTrimInterval: 8192
+2022-09-08 00:29:42.620 DEBUG 15192 --- [           main] io.netty.buffer.PooledByteBufAllocator:174 : -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2022-09-08 00:29:42.620 DEBUG 15192 --- [           main] io.netty.buffer.PooledByteBufAllocator:175 : -Dio.netty.allocator.useCacheForAllThreads: true
+2022-09-08 00:29:42.620 DEBUG 15192 --- [           main] io.netty.buffer.PooledByteBufAllocator:176 : -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2022-09-08 00:29:42.624 DEBUG 15192 --- [           main] io.netty.util.internal.InternalThreadLocalMap:56 : -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2022-09-08 00:29:42.624 DEBUG 15192 --- [           main] io.netty.util.internal.InternalThreadLocalMap:59 : -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2022-09-08 00:29:42.631 DEBUG 15192 --- [           main] io.lettuce.core.resource.DefaultClientResources:107 : -Dio.netty.eventLoopThreads: 12
+2022-09-08 00:29:42.636 DEBUG 15192 --- [           main] io.lettuce.core.resource.DefaultEventLoopGroupProvider:194 : Creating executor io.netty.util.concurrent.DefaultEventExecutorGroup
+2022-09-08 00:29:42.649 DEBUG 15192 --- [           main] io.netty.util.ResourceLeakDetectorFactory:195 : Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@2de82bf8
+2022-09-08 00:29:42.655 DEBUG 15192 --- [           main] io.netty.util.internal.PlatformDependent:919 : org.jctools-core.MpscChunkedArrayQueue: available
+2022-09-08 00:29:42.724 DEBUG 15192 --- [           main] io.lettuce.core.resource.DefaultClientResources:188 : LatencyUtils/HdrUtils are not available, metrics are disabled
+2022-09-08 00:29:43.442 DEBUG 15192 --- [           main] io.lettuce.core.resource.DefaultEventLoopGroupProvider:194 : Creating executor io.netty.util.concurrent.DefaultEventExecutorGroup
+2022-09-08 00:29:43.443 DEBUG 15192 --- [           main] io.lettuce.core.resource.DefaultClientResources:188 : LatencyUtils/HdrUtils are not available, metrics are disabled
+2022-09-08 00:29:44.188 DEBUG 15192 --- [extShutdownHook] io.lettuce.core.resource.DefaultClientResources:599 : Initiate shutdown (0, 2, SECONDS)
+2022-09-08 00:29:44.190 DEBUG 15192 --- [extShutdownHook] io.lettuce.core.resource.DefaultEventLoopGroupProvider:261 : Initiate shutdown (0, 2, SECONDS)
+2022-09-08 00:29:44.198 DEBUG 15192 --- [extShutdownHook] io.lettuce.core.RedisClient:466 : Initiate shutdown (100, 100, MILLISECONDS)
+2022-09-08 00:29:44.202 DEBUG 15192 --- [extShutdownHook] io.lettuce.core.resource.DefaultClientResources:599 : Initiate shutdown (100, 100, MILLISECONDS)
+2022-09-08 00:29:44.202 DEBUG 15192 --- [extShutdownHook] io.lettuce.core.resource.DefaultEventLoopGroupProvider:261 : Initiate shutdown (100, 100, MILLISECONDS)
+2022-09-08 00:31:05.206 DEBUG 1784 --- [           main] io.netty.util.internal.logging.InternalLoggerFactory:53 : Using Log4J as the default logging framework
+2022-09-08 00:31:05.208 DEBUG 1784 --- [           main] io.netty.util.ResourceLeakDetector:130 : -Dio.netty.leakDetection.level: simple
+2022-09-08 00:31:05.209 DEBUG 1784 --- [           main] io.netty.util.ResourceLeakDetector:131 : -Dio.netty.leakDetection.targetRecords: 4
+2022-09-08 00:31:05.220 DEBUG 1784 --- [           main] io.netty.util.internal.PlatformDependent:1015 : Platform: Windows
+2022-09-08 00:31:05.221 DEBUG 1784 --- [           main] io.netty.util.internal.PlatformDependent0:408 : -Dio.netty.noUnsafe: false
+2022-09-08 00:31:05.222 DEBUG 1784 --- [           main] io.netty.util.internal.PlatformDependent0:876 : Java version: 8
+2022-09-08 00:31:05.222 DEBUG 1784 --- [           main] io.netty.util.internal.PlatformDependent0:125 : sun.misc.Unsafe.theUnsafe: available
+2022-09-08 00:31:05.223 DEBUG 1784 --- [           main] io.netty.util.internal.PlatformDependent0:149 : sun.misc.Unsafe.copyMemory: available
+2022-09-08 00:31:05.223 DEBUG 1784 --- [           main] io.netty.util.internal.PlatformDependent0:187 : java.nio.Buffer.address: available
+2022-09-08 00:31:05.224 DEBUG 1784 --- [           main] io.netty.util.internal.PlatformDependent0:252 : direct buffer constructor: available
+2022-09-08 00:31:05.224 DEBUG 1784 --- [           main] io.netty.util.internal.PlatformDependent0:326 : java.nio.Bits.unaligned: available, true
+2022-09-08 00:31:05.224 DEBUG 1784 --- [           main] io.netty.util.internal.PlatformDependent0:391 : jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2022-09-08 00:31:05.225 DEBUG 1784 --- [           main] io.netty.util.internal.PlatformDependent0:398 : java.nio.DirectByteBuffer.<init>(long, int): available
+2022-09-08 00:31:05.225 DEBUG 1784 --- [           main] io.netty.util.internal.PlatformDependent:1058 : sun.misc.Unsafe: available
+2022-09-08 00:31:05.225 DEBUG 1784 --- [           main] io.netty.util.internal.PlatformDependent:1177 : -Dio.netty.tmpdir: C:\Users\cong1\AppData\Local\Temp (java.io.tmpdir)
+2022-09-08 00:31:05.226 DEBUG 1784 --- [           main] io.netty.util.internal.PlatformDependent:1256 : -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2022-09-08 00:31:05.227 DEBUG 1784 --- [           main] io.netty.util.internal.PlatformDependent:177 : -Dio.netty.maxDirectMemory: 3754426368 bytes
+2022-09-08 00:31:05.227 DEBUG 1784 --- [           main] io.netty.util.internal.PlatformDependent:184 : -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2022-09-08 00:31:05.228 DEBUG 1784 --- [           main] io.netty.util.internal.CleanerJava6:92 : java.nio.ByteBuffer.cleaner(): available
+2022-09-08 00:31:05.228 DEBUG 1784 --- [           main] io.netty.util.internal.PlatformDependent:204 : -Dio.netty.noPreferDirect: false
+2022-09-08 00:31:05.228 DEBUG 1784 --- [           main] io.netty.buffer.PooledByteBufAllocator:156 : -Dio.netty.allocator.numHeapArenas: 24
+2022-09-08 00:31:05.229 DEBUG 1784 --- [           main] io.netty.buffer.PooledByteBufAllocator:157 : -Dio.netty.allocator.numDirectArenas: 24
+2022-09-08 00:31:05.229 DEBUG 1784 --- [           main] io.netty.buffer.PooledByteBufAllocator:159 : -Dio.netty.allocator.pageSize: 8192
+2022-09-08 00:31:05.229 DEBUG 1784 --- [           main] io.netty.buffer.PooledByteBufAllocator:164 : -Dio.netty.allocator.maxOrder: 11
+2022-09-08 00:31:05.229 DEBUG 1784 --- [           main] io.netty.buffer.PooledByteBufAllocator:168 : -Dio.netty.allocator.chunkSize: 16777216
+2022-09-08 00:31:05.230 DEBUG 1784 --- [           main] io.netty.buffer.PooledByteBufAllocator:169 : -Dio.netty.allocator.tinyCacheSize: 512
+2022-09-08 00:31:05.230 DEBUG 1784 --- [           main] io.netty.buffer.PooledByteBufAllocator:170 : -Dio.netty.allocator.smallCacheSize: 256
+2022-09-08 00:31:05.230 DEBUG 1784 --- [           main] io.netty.buffer.PooledByteBufAllocator:171 : -Dio.netty.allocator.normalCacheSize: 64
+2022-09-08 00:31:05.230 DEBUG 1784 --- [           main] io.netty.buffer.PooledByteBufAllocator:172 : -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2022-09-08 00:31:05.230 DEBUG 1784 --- [           main] io.netty.buffer.PooledByteBufAllocator:173 : -Dio.netty.allocator.cacheTrimInterval: 8192
+2022-09-08 00:31:05.231 DEBUG 1784 --- [           main] io.netty.buffer.PooledByteBufAllocator:174 : -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2022-09-08 00:31:05.231 DEBUG 1784 --- [           main] io.netty.buffer.PooledByteBufAllocator:175 : -Dio.netty.allocator.useCacheForAllThreads: true
+2022-09-08 00:31:05.231 DEBUG 1784 --- [           main] io.netty.buffer.PooledByteBufAllocator:176 : -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2022-09-08 00:31:05.235 DEBUG 1784 --- [           main] io.netty.util.internal.InternalThreadLocalMap:56 : -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2022-09-08 00:31:05.235 DEBUG 1784 --- [           main] io.netty.util.internal.InternalThreadLocalMap:59 : -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2022-09-08 00:31:05.241 DEBUG 1784 --- [           main] io.lettuce.core.resource.DefaultClientResources:107 : -Dio.netty.eventLoopThreads: 12
+2022-09-08 00:31:05.245 DEBUG 1784 --- [           main] io.lettuce.core.resource.DefaultEventLoopGroupProvider:194 : Creating executor io.netty.util.concurrent.DefaultEventExecutorGroup
+2022-09-08 00:31:05.257 DEBUG 1784 --- [           main] io.netty.util.ResourceLeakDetectorFactory:195 : Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5bc40f5d
+2022-09-08 00:31:05.262 DEBUG 1784 --- [           main] io.netty.util.internal.PlatformDependent:919 : org.jctools-core.MpscChunkedArrayQueue: available
+2022-09-08 00:31:05.321 DEBUG 1784 --- [           main] io.lettuce.core.resource.DefaultClientResources:188 : LatencyUtils/HdrUtils are not available, metrics are disabled
+2022-09-08 00:31:05.957 DEBUG 1784 --- [           main] io.lettuce.core.resource.DefaultEventLoopGroupProvider:194 : Creating executor io.netty.util.concurrent.DefaultEventExecutorGroup
+2022-09-08 00:31:05.958 DEBUG 1784 --- [           main] io.lettuce.core.resource.DefaultClientResources:188 : LatencyUtils/HdrUtils are not available, metrics are disabled
+2022-09-08 00:31:06.660 DEBUG 1784 --- [extShutdownHook] io.lettuce.core.resource.DefaultClientResources:599 : Initiate shutdown (0, 2, SECONDS)
+2022-09-08 00:31:06.662 DEBUG 1784 --- [extShutdownHook] io.lettuce.core.resource.DefaultEventLoopGroupProvider:261 : Initiate shutdown (0, 2, SECONDS)
+2022-09-08 00:31:06.672 DEBUG 1784 --- [extShutdownHook] io.lettuce.core.RedisClient:466 : Initiate shutdown (100, 100, MILLISECONDS)
+2022-09-08 00:31:06.676 DEBUG 1784 --- [extShutdownHook] io.lettuce.core.resource.DefaultClientResources:599 : Initiate shutdown (100, 100, MILLISECONDS)
+2022-09-08 00:31:06.677 DEBUG 1784 --- [extShutdownHook] io.lettuce.core.resource.DefaultEventLoopGroupProvider:261 : Initiate shutdown (100, 100, MILLISECONDS)

@@ -9,16 +9,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.xml.ws.Action;
 
-@RestController
+//@RestController
 public class Producer {
-
-    private final static String TOPIC_NAME = "my-partitions";
+   //my-partitions
+    private final static String TOPIC_NAME = "test2";
     @Autowired
     KafkaTemplate<String, String> kafkaTemplate;
 
     @RequestMapping("/send")
     public String sendMsg() {
-        for (int i = 0; i < 100000; i++) {
+        for (int i = 0; i < 10; i++) {
             User user = new User();
             user.setId(i);
             int name = (int) Math.random() * 100;
